@@ -1,0 +1,274 @@
+body {
+	font-family:'Century', 'Yu Gothic', serif;
+	min-width: 320px;
+	padding:0;
+	margin:0 auto;
+	user-select:none;
+	-moz-user-select: none; /* Firefox */
+-webkit-user-select: none; /* Safari、Chromeなど */
+-ms-user-select: none; /* IE10かららしい */
+	/*
+	background-image:url("../image/background/background_light.jpg");
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+	*/
+}
+
+.head_picture{
+	margin:0 auto;
+	height:200px;
+	background-image:url("../image/background/background_light.jpg");
+	background-position:center;
+}
+
+.inner_picture {
+	width:70%;
+	height:70%;
+	margin:2.5%;
+}
+
+.line{
+	height: 20px;
+	background-size: auto 20px;
+	background-image:url("../image/cat.svg");
+	background-repeat:repeat-x;
+}
+h3 {
+	color:inherit;
+	padding:0;
+	margin:10px;
+	margin-right:0;
+	width:93%;
+	pointer-events: none
+}
+
+h4 {
+	text-align: center;
+	margin-top:3em;
+}
+
+.place{
+	
+}
+.pull_down{
+	width:7%;
+	height:100%;
+	pointer-events: none;
+}
+.close_box{
+	text-align: right;
+}
+.close_pull{
+	padding:5px;
+	width: 7%;
+}
+.close_pull:hover{
+	cursor: pointer;
+}
+.close:hover{
+	cursor: pointer;
+}
+article{
+	position:relative;
+}
+
+.btn {
+	height:3em;
+	margin:5px;
+	margin-top:10px;
+	padding: 0;
+	position: relative;
+	border-left:solid 4px orange;
+	border-bottom:solid 1px navy;
+}
+
+.btn:hover{
+	background-color:coral;
+	transition:all .5s ease;
+}
+.btn:hover h3{
+	color:white;
+}
+
+
+.flex{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.pulled {
+	padding:20px;
+}
+
+#navigation{
+	background-color: rgba(255,165,0,0.8);
+	text-align:right;
+	position: fixed;
+	top:5px;
+	right:5px;
+	padding:0;
+	margin:0;
+	z-index:100;
+}
+
+#navigation .humblg{
+	position:fixed;
+	top:5px;
+	right:5px;
+
+	padding: 0;
+	margin: 0;
+	height:50px;
+	width:50px;
+}
+#navigation .humblg:hover{
+	cursor: pointer;
+}
+#navigation .hum_pul{
+	display:none;
+}
+#navigation .menu{
+	text-align:left;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+#navigation .menu ul{
+	position:relative;
+	margin:0;
+	padding:0;
+}
+#navigation .close{
+	text-align:right;
+	position:relative;
+	top:0px;
+	right:0px;
+	height:50px;
+	width:50px;
+}
+#navigation ul{
+	list-style: none;
+}
+
+.wrap {
+	width:500px;
+	padding:0;
+	margin:0px auto;
+	
+}
+
+
+#title {
+	padding:10px;
+	margin: 10px 10px 10px 10px;
+}
+
+#title .heading {
+	position:relative;
+	text-align: center;
+}
+#title .heading .title_svg {
+	position:relative;
+	top:-35px;
+	left:50px;
+}
+#title .heading h1{
+	margin:0;
+	padding:0;
+	position:relative;
+	top:20px;
+}
+#title p{
+	text-align: left;
+	margin-top: 0;
+}
+
+h2{
+	text-align:center;
+}
+
+#chef {
+	margin:10px;
+}
+
+#chef .chef_pul {
+	border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+	border: 2px dashed #333;
+}
+
+#bento {
+	margin:10px;
+}
+
+
+#bento .bento_pul{
+	border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+	border: 2px dashed #333;
+}
+
+#events {
+	margin:10px;
+}
+
+#events .events_pul{
+	border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+	border: 2px dashed #333;
+}
+
+#events li {
+	padding:5px;
+	border-top:5px double orange;
+}
+
+#QA {
+	margin:10px;
+	border: solid 2px;
+}
+
+#message {
+	text-align: center;
+}
+#message p{
+	margin-bottom:0;
+}
+#message a{
+	color:blue;
+	text-decoration: underline;
+}
+
+
+#credit {
+	margin:10px;
+	margin-top:50px;
+	padding:0;
+	border-top: 1px solid black;
+}
+#credit p{
+	margin:0;
+}
+
+
+a {color:inherit;}
+
+a:visited {
+	color:inherit;
+	text-decoration: none;
+	border-bottom:none;
+}
+a:hover{
+	color:green;
+}
+
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
