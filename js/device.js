@@ -1,8 +1,7 @@
+'use strict';
+
 var mobile_ver= "1.0.1"
 var default_ver= "1.0.1"
-
-
-
 
 function getDevice(){
     var ua = navigator.userAgent;

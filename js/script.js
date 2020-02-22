@@ -1,3 +1,5 @@
+'use strict';
+
 window.addEventListener('load', function(){
     var elm = document.getElementsByClassName("content");
     for (let i = 0; i<elm.length; i++){
