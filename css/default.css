@@ -59,11 +59,11 @@ h4 {
 .close_box{
 	text-align: right;
 }
-.close_pull{
+.close_button{
 	padding:5px;
 	width: 7%;
 }
-.close_pull:hover{
+.close_button:hover{
 	cursor: pointer;
 }
 .close:hover{
