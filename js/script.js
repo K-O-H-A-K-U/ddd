@@ -40,7 +40,7 @@ window.addEventListener('load', function(){
             return Promise.resolve(article_top);
         } else {
             content.style.display = 'none'
-            return Promise.resolve(0);
+            return Promise.resolve(document.getElementById('service').getBoundingClientRect().y);
         }
     }
 }
