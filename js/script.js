@@ -19,6 +19,10 @@ window.addEventListener('load', function(){
         toggle_content(event.target).then(value => scroll_y(value));
     }
 
+    const get_y = element => {
+        return element.getBoundingClientRect().y;
+    }
+
     const scroll_y = y => {
         window.scrollBy({
             top: y,
@@ -31,16 +35,15 @@ window.addEventListener('load', function(){
             article = article.parentNode;
         }
         // nodeType 1 is ELEMENT_NODE
-        let article_top = article.getBoundingClientRect().y;
         const content = Array.prototype.map.call(article.childNodes, element => element)
                                          .find(node => node.nodeType == 1 && node.classList.contains('content'));
         if (content.style.display == 'none') {
             Array.prototype.forEach.call(document.getElementsByClassName('content'), content => content.style.display = 'none');
             content.style.display = 'block';
-            return Promise.resolve(article_top);
+            return Promise.resolve(get_y(article));
         } else {
             content.style.display = 'none'
-            return Promise.resolve(document.getElementById('service').getBoundingClientRect().y);
+            return Promise.resolve(get_y(document.getElementById('service')));
         }
     }
 }
