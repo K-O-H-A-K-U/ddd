@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
     }
 
     const scroll_y = y => {
-        window.scroll({
+        window.scrollBy({
             top: y,
             behavior: 'smooth'
         })
